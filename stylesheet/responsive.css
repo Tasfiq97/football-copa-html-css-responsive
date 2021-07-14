@@ -1,0 +1,429 @@
+/* ---------------
+------common codes */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+.button {
+  padding: 10px 24px;
+  background-color: #e02c6d;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  background: cornsilk;
+  color: #e02c6d;
+}
+.heading {
+  font-size: 48px;
+  margin-left: 60px;
+}
+/*----------- 
+header sec starts  
+----------------*/
+.header-sec {
+  background-color: #2d25a0;
+}
+.header-sec:hover img {
+  transform: translateX(-60px);
+  transform-origin: center;
+}
+.navbar-sec {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navbar-sec ul {
+  margin-top: 42px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navbar-sec ul li {
+  list-style: none;
+  margin-left: 36px;
+  font-size: 16px;
+  color: white;
+}
+.log-btn {
+  margin-top: 39px;
+}
+
+.fa-sign-out-alt {
+  color: white;
+  font-size: 20px;
+}
+
+.watch-live {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+.copa-left {
+  width: 60%;
+  padding: 121px 156px;
+}
+.btn-top {
+  margin-top: 27px;
+}
+
+.copa-right {
+  width: 40%;
+}
+.watch-live h1 {
+  font-size: 64px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+.watch-live img {
+  margin-top: 67px;
+  width: 556px;
+  height: 438px;
+  margin-bottom: 86px;
+  margin-right: 50px;
+  transition: all 1s ease-out;
+}
+
+/*--------------- 
+blog section starts 
+-------------------*/
+
+.football-blog {
+  margin-top: 85px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 160px;
+  margin-right: 160px;
+  grid-gap: 30px;
+}
+.blog-all {
+  width: 88%;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.blog-info {
+  padding: 15px;
+}
+.blog-all h3 {
+  font-size: 28px;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+.blog-info p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #6c6c6c;
+  margin-bottom: 0px;
+  font-weight: 400;
+}
+.blog-all img {
+  width: 300px;
+  height: 256px;
+}
+
+/* ---------------
+highights section 
+---------------- */
+.full-highlight {
+  margin-top: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.highlight-left {
+  width: 50%;
+  margin-left: 140px;
+  margin-right: 60px;
+}
+.highlight-left h1 {
+  margin: 0;
+  font-size: 48px;
+}
+.highlight-left p {
+  font-size: 16px;
+  color: #6c6c6c;
+}
+.highlight-right {
+  width: 50%;
+}
+.full-highlight img {
+  width: 567px;
+  height: 427px;
+}
+
+/* --------------------
+gallery section starts here  
+---------------------*/
+.gallery-sec {
+  margin-top: 100px;
+}
+
+.full-gallery {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-left: 50px;
+}
+.full-gallery img {
+  cursor: pointer;
+  width: 456px;
+  height: 338px;
+}
+
+/*-------------------- 
+video section starts here  
+-----------------------*/
+.video-sec {
+  margin-top: 100px;
+}
+
+.video-high {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 80px;
+}
+.all-video {
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+.all-video img {
+  width: 340px;
+  height: 356px;
+}
+.all-video h3 {
+  margin: 0px;
+}
+.all-video p {
+  font-size: 16px;
+  color: #6c6c6c;
+  margin-bottom: 0px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/*----------------
+ footer starts here 
+ --------------- */
+.football-foot {
+  margin-top: 160px;
+  text-align: center;
+}
+.football-foot p {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.foot-sec img {
+  width: 483px;
+  height: 110px;
+}
+.icons i {
+  background-color: rgb(216, 208, 208);
+  padding: 7px;
+  margin-top: 20px;
+  border-radius: 50%;
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 14px;
+  color: #969bab;
+  transition: all 0.3s ease-in-out;
+}
+.icons i:hover {
+  color: #e02c6d;
+}
+
+/* -----------------
+media queries  
+--------------*/
+
+@media only screen and (max-width: 688px) {
+  /* header section  */
+  .navbar-sec ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-sec ul li {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .navbar-sec {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .log-btn {
+    margin-left: 20px;
+    margin-top: 19px;
+  }
+  .watch-live {
+    width: 100%;
+    flex-direction: column;
+  }
+  .header-sec:hover img {
+    transform: translateX(-10px);
+    transform-origin: center;
+  }
+  .copa-left {
+    margin-top: 50px;
+    margin-left: 20px;
+
+    padding: 0px;
+  }
+  .copa-right {
+    width: 100%;
+  }
+  .watch-live h1 {
+    font-size: 30px;
+  }
+  .watch-live img {
+    margin-top: 57px;
+    width: 329px;
+    height: 259px;
+
+    margin-right: 0px;
+    margin-bottom: 66px;
+
+    transition: all 1s ease-out;
+  }
+
+  /* blog section  */
+  .football-blog {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 15px;
+    margin-right: 0px;
+  }
+
+  /* / highlight section  */
+
+  .full-highlight {
+    flex-direction: column;
+    align-items: center;
+  }
+  .highlight-left {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .highlight-left h1 {
+    font-size: 36px;
+  }
+  .full-highlight img {
+    margin-top: 29px;
+    margin-left: 20px;
+    width: 300px;
+    height: 238px;
+  }
+  .highlight-left p {
+    padding: 10px;
+    font-size: 16px;
+    color: #6c6c6c;
+  }
+  .highlight-right {
+    width: 100%;
+  }
+  .button {
+    margin-left: 10px;
+  }
+
+  /* gallery section starts  */
+
+  .full-gallery {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 0px;
+    grid-gap: 20px;
+  }
+  .full-gallery img {
+    margin-left: 30px;
+    cursor: pointer;
+    width: 328px;
+    height: 238px;
+  }
+
+  /* video section starts  */
+  .video-high {
+    width: 90%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0px;
+  }
+
+  .all-video img {
+    margin-left: 15px;
+    width: 330px;
+    height: 238px;
+  }
+  .all-video p {
+    font-size: 16px;
+    color: #6c6c6c;
+    margin-bottom: 0px;
+    font-weight: 400;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  /* footer section starts  */
+
+  .football-foot {
+    text-align: center;
+  }
+  .foot-sec img {
+    width: 303px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .watch-live h1 {
+    font-size: 30px;
+  }
+
+  .copa-left {
+    margin-top: 50px;
+  }
+  .log-btn {
+    margin-left: 0px;
+  }
+  .copa-right {
+    width: 100%;
+  }
+  .button {
+    margin-left: 0px;
+  }
+  .header-sec:hover img {
+    transform-origin: center;
+  }
+  .watch-live {
+    width: 100%;
+  }
+  .watch-live img {
+    margin-top: 57px;
+    width: 229px;
+    height: 200px;
+  }
+  .blog-all img {
+    width: 240px;
+    height: 200px;
+  }
+  .all-video img {
+    width: 240px;
+    height: 180px;
+  }
+}
+.full-gallery img {
+  margin-left: 30px;
+  cursor: pointer;
+  width: 220px;
+  height: 200px;
+}
